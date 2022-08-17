@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- Font Awsome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
   <title>BioTech</title>
 </head>
@@ -13,26 +17,27 @@
 
   <main class="container">
     <!--! Navigation bar - start  -->
-    <nav>
+    <nav id="navbar">
       <ul class="navbar-links">
         <li class="nav-link"><a href="#home-section">Home</a></li>
-        <li class="nav-link">
-          <a href="#service-section">Service</a>
-        </li>
-        <li class="nav-link"><a href="#projects-section" class="projects">Projects</a></li>
+        <li class="nav-link"><a href="#features-section">Features</a></li>
+        <li class="nav-link"><a href="#projects-section">Projects</a></li>
         <li class="nav-link"><a href="#about-section">About</a></li>
         <li class="nav-link"><a href="#contact-section">Contact us</a></li>
       </ul>
 
-      <div class="burger-menu"><span>burger-menu</span></div>
+      <!-- Font Awesome Icons -->
+      <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
     </nav>
     <!--! Navigation bar - end  -->
 
     <!--! Home section start -->
     <section id="home-section">
       <a class="logo" href="#home-section">BioTech</a>
-
-      <div class="home-section__container">
+      <div class="home-section__container ">
         <div class="home-content__left">
           <div class="heading-container">
             <h1 class="heading-primary heading-home">Sustainable solutions</h1>
@@ -59,29 +64,29 @@
     <!--! Home section end -->
 
     <!--! Service section start -->
-    <section id="service-section">
-      <div class="heading-container">
+    <section id="features-section">
+      <div class="heading-container heading-features">
         <h1 class="heading-primary">Reliable aids you recive from us</h1>
       </div>
 
-      <div class="service-content flex">
-        <div class="service-content_element">
+      <div class="features-content flex">
+        <div class="features-content_element element--1">
           <h3 class="heading-tertiary heading-service_element">
             Freshwater and sediment sampling and analysis
             </h2>
         </div>
-        <div class="service-content_element">
+        <div class="features-content_element element--2">
           <h3 class="heading-tertiary heading-service_element">eDNA sampling and analysis</h2>
         </div>
-        <div class="service-content_element">
+        <div class="features-content_element element--3">
           <h3 class="heading-tertiary heading-service_element">
             Traditional knowledge interviews and collation
             </h2>
         </div>
-        <div class="service-content_element">
+        <div class="features-content_element element--4">
           <h3 class="heading-tertiary heading-service_element">Document reviewer</h2>
         </div>
-        <div class="service-content_element">
+        <div class="features-content_element element--5">
           <h3 class="heading-tertiary heading-service_element">Community outreach and Consultation</h2>
         </div>
       </div>
@@ -90,45 +95,121 @@
 
     <!--! Projects section start -->
     <section id="projects-section">
-      <div class="heading-container">
-        <h1 class="heading-primary">Our projects</h1>
-      </div>
+      <center>
+        <div class="heading-container projects-heading">
+          <h1 class="heading-primary">Our projects</h1>
+        </div>
 
-      <div class="projects-gallery">
-        <figure class="gallery__item gallery__item--1">
-          <img src="img/gallery-1.jpg" alt="project image 1" class="gallery__img" />
-          <p class="paragraph-secondary">Cherish</p>
-        </figure>
+        <div class="swiper gallery-projects">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+              <div class="gallery__item gallery__item--1">
+                <img src="img/gallery-1.jpg" alt="project image 1" />
+                <p class="paragraph-secondary img__description">Cherish</p>
+              </div>
+              <div class="gallery-paragraph">
+                <h3 class="heading-tertiary">Cherish</h3>
+                <p class="paragraph-secondary ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                  Corrupti, delectus.
+                  Sed et aliquam cupiditate eaque rerum eum vitae quam iure voluptate quia debitis illum ipsa, ab
+                  alias
+                  reprehenderit aliquid! </p>
+              </div>
+            </div>
 
-        <figure class="gallery__item gallery__item--2">
-          <img src="img/gallery-2.jpg" alt="project image 2" class="gallery__img" />
-          <p class="paragraph-secondary">Rebuild</p>
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-          <img src="img/gallery-3.jpg" alt="project image 3" class="gallery__img" />
-          <p class="paragraph-secondary">Observe</p>
-        </figure>
-        <figure class="gallery__item gallery__item--4">
-          <img src="img/gallery-4.jpg" alt="project image 4" class="gallery__img" />
-          <p class="paragraph-secondary">Grow</p>
-        </figure>
-        <figure class="gallery__item gallery__item--5">
-          <img src="img/gallery-5.jpg" alt="project image 5" class="gallery__img" />
-          <p class="paragraph-secondary">Research</p>
-        </figure>
+            <div class="swiper-slide box">
+              <div class="gallery__item gallery__item--2">
+                <img src="img/gallery-2.jpg" alt="project image 2" />
+                <p class="paragraph-secondary img__description">Rebuild</p>
+              </div>
+              <div class="gallery-paragraph">
+                <h3 class="heading-tertiary">Rebuild</h3>
+                <p class="paragraph-secondary ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                  Corrupti, delectus.
+                  Sed et aliquam cupiditate eaque rerum eum vitae quam iure voluptate quia debitis illum ipsa, ab
+                  alias
+                  reprehenderit aliquid! </p>
+              </div>
+            </div>
 
-        <figure class="gallery__item gallery__item--6">
-          <img src="img/gallery-6.jpg" alt="project image 6" class="gallery__img" />
-          <p class="paragraph-secondary">Test</p>
-        </figure>
-      </div>
+            <div class="swiper-slide box">
+              <div class="gallery__item gallery__item--3">
+                <img src="img/gallery-3.jpg" alt="project image 3" />
+                <p class="paragraph-secondary img__description">Observe</p>
+              </div>
+              <div class="gallery-paragraph">
+                <h3 class="heading-tertiary">Observe</h3>
+                <p class="paragraph-secondary ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                  Corrupti, delectus.
+                  Sed et aliquam cupiditate eaque rerum eum vitae quam iure voluptate quia debitis illum ipsa, ab
+                  alias
+                  reprehenderit aliquid! </p>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+              <div class="gallery__item gallery__item--4">
+                <img src="img/gallery-4.jpg" alt="project image 4" />
+                <p class="paragraph-secondary img__description">Grow</p>
+              </div>
+              <div class="gallery-paragraph">
+                <h3 class="heading-tertiary">Grow</h3>
+                <p class="paragraph-secondary ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                  Corrupti, delectus.
+                  Sed et aliquam cupiditate eaque rerum eum vitae quam iure voluptate quia debitis illum ipsa, ab
+                  alias
+                  reprehenderit aliquid! </p>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+              <div class="gallery__item gallery__item--5">
+                <img src="img/gallery-5.jpg" alt="project image 5" />
+                <p class="paragraph-secondary img__description">Research</p>
+              </div>
+              <div class="gallery-paragraph">
+                <h3 class="heading-tertiary">Research</h3>
+                <p class="paragraph-secondary ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                  Corrupti, delectus.
+                  Sed et aliquam cupiditate eaque rerum eum vitae quam iure voluptate quia debitis illum ipsa, ab
+                  alias
+                  reprehenderit aliquid! </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide box">
+              <div class="gallery__item gallery__item--6">
+                <img src="img/gallery-6.jpg" alt="project image 6" />
+                <p class="paragraph-secondary img__description">Test</p>
+              </div>
+              <div class="gallery-paragraph">
+                <h3 class="heading-tertiary">Test</h3>
+                <p class="paragraph-secondary ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                  elit.
+                  Corrupti, delectus.
+                  Sed et aliquam cupiditate eaque rerum eum vitae quam iure voluptate quia debitis illum ipsa, ab
+                  alias
+                  reprehenderit aliquid! </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </center>
     </section>
     <!--! Projects section end -->
 
 
     <!--! About us section end -->
     <section id="about-section">
-      <div class="heading-container">
+      <div class="heading-container about-heading">
         <h1 class="heading-primary">Who we are</h1>
       </div>
 
@@ -138,13 +219,19 @@
         </div>
 
         <div class="about__right">
-          <h1 class="heading-secondary">We build with community in mind</h1>
-          <p class="paragraph-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur repellendus
+          <h2 class="heading-secondary">We build with community in mind</h2>
+          <br>
+          <p class="paragraph-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur repellendus
             repudiandae tenetur dignissimos eveniet molestias, delectus, sint necessitatibus aliquid consequuntur
-            exercitationem dolores, quos tempore provident sed sapiente dolorem reprehenderit veritatis nulla. Molestiae
-            voluptatum aspernatur maiores obcaecati quasi impedit. Distinctio enim ab recusandae. Enim facilis dolorem
-            vero ex iusto inventore ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde veniam assumenda
-            odit nulla officia possimus necessitatibus aperiam voluptatibus ea incidunt.</p>
+            exercitationem dolores, quos tempore provident sed sapiente dolorem
+            reprehenderit veritatis nulla.
+          </p>
+          <br>
+          <p class="paragraph-secondary">
+            Molestiae voluptatum aspernatur maiores obcaecati quasi impedit. Distinctio enim ab recusandae. Enim facilis
+            dolorem
+            vero ex iusto inventore ut! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </p>
         </div>
       </div>
     </section>
@@ -157,14 +244,14 @@
         <h1 class="heading-primary">Contact us</h1>
       </div>
 
-      <div class="contact-container">
-        <form class="contact-form">
+      <div class="contact-container flex">
+        <form class="contact-form grid">
           <input type="text" placeholder="Your first name">
           <input type="text" placeholder="Your last name">
           <input type="email" placeholder="Your email">
           <textarea cols="30" rows="10" placeholder="Enter text message here"></textarea>
         </form>
-        <a href="./send.html" class="btn">Send</a>
+        <a href="./send.html" class="btn home-btn">Send</a>
       </div>
     </section>
     <!--! Contact us section end -->
@@ -173,33 +260,26 @@
 
   <!--! Footer Start -->
   <footer id="footer">
-    <!-- left -->
+    <!-- left - in mobile top -->
     <div class="footer-left heading-container">
-      <h1 class="heading-primary">BioTech</h1>
+      <h1 class="heading-primary footer-heading">BioTech</h1>
     </div>
     <!-- center -->
-    <div class="footer-center">
-      <nav class="footer__nav">
-        <ul class="footer__nav-list">
-          <li><a href="#home-section">Home</a></li>
-          <span>|</span>
-          <li><a href="#service-section">Features</a></li>
-          <span>|</span>
-          <li><a href="#projects-section">Projects</a></li>
-          <span>|</span>
-          <li><a href="#about-section">About</a></li>
-          <span>|</span>
-          <li><a href="#contact-section">Contact us</a></li>
-        </ul>
-      </nav>
+    <div class="footer-center flex">
+      <a href="#home-section">Home</a> <span>|</span>
+      <a href="#features-section">Features</a> <span>|</span>
+      <a href="#projects-section">Projects</a> <span>|</span>
+      <a href="#about-section">About</a> <span>|</span>
+      <a href="#contact-section">Contact us</a>
     </div>
-    <!-- right -->
-    <div class="footer-right">
-      <span class="copyright">Developed by Bojan</span>
+    <!-- right - in mobile bottom -->
+    <div class="footer-right flex">
+      <span class="copyright">Developed by Bojan &copy;2022</span>
     </div>
   </footer>
   <!--! Footer End-->
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./script.js"></script>
 
 </html>
